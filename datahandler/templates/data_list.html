@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data list</title>
+</head>
+<body>
+    <h2>Data list</h2>
+    <ul>
+        {% for data_object in data_objects %}
+            <li>{{ data_object.created_at }} - {{data_object.prompt_json}}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
